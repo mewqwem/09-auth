@@ -5,7 +5,7 @@ import type { Note } from "../../types/note";
 import css from "./NoteList.module.css";
 import toast from "react-hot-toast";
 import { BeatLoader } from "react-spinners";
-import { deleteNote } from "@/lib/api";
+import { deleteNote } from "@/lib/api/clientApi";
 import Link from "next/link";
 
 interface NoteListProps {

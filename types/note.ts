@@ -18,5 +18,9 @@ export type CreateNote = {
   content: string;
   tag: string;
 };
+export interface NotesResponse {
+  notes: Note[];
+  totalPages: number;
+}
 
 export type Tags = "Todo" | "Work" | "Personal" | "Meeting" | "Shopping";

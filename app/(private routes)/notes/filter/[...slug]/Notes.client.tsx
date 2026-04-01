@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { useDebouncedCallback } from "use-debounce";
 import { BarLoader } from "react-spinners";
 import toast from "react-hot-toast";
-import { getNotes } from "@/lib/api";
+import { fetchNotes } from "@/lib/api/clientApi";
 import SearchBox from "@/components/SearchBox/SearchBox";
 import Pagination from "@/components/Pagination/Pagination";
 import NoteList from "@/components/NoteList/NoteList";
@@ -25,7 +25,7 @@ export default function NotesClient({ tag }: NotesClientProps) {
 
   const { data, isError, isLoading, isFetching } = useQuery({
     queryKey: ["getNotes", searchValue, page, currentTag],
-    queryFn: () => getNotes(searchValue, page, perPage, currentTag),
+    queryFn: () => fetchNotes(searchValue, page, perPage, currentTag),
     placeholderData: keepPreviousData,
     staleTime: 60 * 1000,
   });

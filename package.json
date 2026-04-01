@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^5.95.2",
-    "axios": "^1.13.6",
+    "axios": "^1.14.0",
+    "cookie": "^1.1.1",
     "formik": "^2.4.9",
     "next": "16.2.1",
     "react": "19.2.4",
@@ -18,6 +19,7 @@
     "react-hot-toast": "^2.6.0",
     "react-paginate": "^8.3.0",
     "react-spinners": "^0.17.0",
+    "react-toastify": "^11.0.5",
     "use-debounce": "^10.1.0",
     "yup": "^1.7.1",
     "zustand": "^5.0.12"
