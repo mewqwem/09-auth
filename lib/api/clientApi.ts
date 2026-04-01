@@ -1,4 +1,4 @@
-import { User } from "@/types/users";
+import { User } from "@/types/user";
 import { nextServer } from "./api";
 import type { Note, NoteData, NotesResponse } from "@/types/note";
 import { SessionResponse } from "./serverApi";

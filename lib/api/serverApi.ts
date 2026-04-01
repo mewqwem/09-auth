@@ -1,7 +1,7 @@
 import { cookies } from "next/headers";
 import { nextServer } from "./api";
 import type { Note, NotesResponse } from "@/types/note";
-import { User } from "@/types/users";
+import { User } from "@/types/user";
 import { AxiosResponse } from "axios";
 
 export interface SessionResponse {
